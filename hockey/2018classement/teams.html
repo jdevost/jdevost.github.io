@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  </head>
+  <body>
+  <div class="links">
+    <a href="./teams.html">Équipes</a>
+    <a href="./players.html">Joueurs</a>
+    <a href="./match.html">Parties</a>
+  </div>
+
+    <h1>Classements Equipes - Atome B</h1>
+    <table id="standings">
+      <thead><tr>
+        <th></th>
+        <th>Equipe</th>
+        <th>PJ</th>
+        <th>bp</th>
+        <th>bc</th>
+      </tr></thead>
+      <tbody>
+      <tr class="">
+  <td></td>
+  <td class="mustang">Mustang</td>
+  <td>5</td>
+  <td>10</td>
+  <td>19</td>
+</tr>
+<tr class="">
+  <td></td>
+  <td class="lynx">Lynx</td>
+  <td>5</td>
+  <td>38</td>
+  <td>5</td>
+</tr>
+<tr class="">
+  <td></td>
+  <td class="royaux1">Royaux 1</td>
+  <td>3</td>
+  <td>5</td>
+  <td>16</td>
+</tr>
+<tr class="">
+  <td></td>
+  <td class="royaux2">Royaux 2</td>
+  <td>4</td>
+  <td>10</td>
+  <td>18</td>
+</tr>
+<tr class="">
+  <td></td>
+  <td class="chevaliers1">Chevaliers 1</td>
+  <td>5</td>
+  <td>6</td>
+  <td>15</td>
+</tr>
+<tr class="">
+  <td></td>
+  <td class="chevaliers2">Chevaliers 2</td>
+  <td>3</td>
+  <td>8</td>
+  <td>7</td>
+</tr>
+<tr class="">
+  <td></td>
+  <td class="diablos1">Diablos 1</td>
+  <td>4</td>
+  <td>10</td>
+  <td>13</td>
+</tr>
+<tr class="">
+  <td></td>
+  <td class="diablos2">Diablos 2</td>
+  <td>3</td>
+  <td>7</td>
+  <td>3</td>
+</tr>
+<tr class="">
+  <td></td>
+  <td class="gouverneurs1">Gouverneurs 1</td>
+  <td>2</td>
+  <td>7</td>
+  <td>5</td>
+</tr>
+<tr class="">
+  <td></td>
+  <td class="gouverneurs2">Gouverneurs 2</td>
+  <td>2</td>
+  <td>5</td>
+  <td>6</td>
+</tr>
+<tr class="">
+  <td></td>
+  <td class="diablos3">Diablos 3</td>
+  <td>2</td>
+  <td>7</td>
+  <td>6</td>
+</tr>
+      </tbody>
+    </table>
+    <script>
+$(document).ready(function() {
+  $('#standings').DataTable({
+    "pageLength": 200,
+    lengthChange: false,
+    paging: false,
+    searching: false,
+    "rowCallback": function( row, data, displayNum, displayIndex, dataIndex  ) {
+      $('td:first-child', row).html( displayIndex );
+    },
+    "columns": [
+      null,
+      { "orderSequence": [ "asc", "desc" ] },
+      { "orderSequence": [ "desc", "asc" ] },
+      { "orderSequence": [ "desc", "asc" ] },
+      { "orderSequence": [ "desc", "asc" ] },
+    ]
+  });
+});
+    </script>
+  </body>
+</html>
