@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.datatables.net/1.10.19/css/dataTables.jqueryui.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/fh-3.1.4/datatables.min.css"/>
     <link href="main.css" rel="stylesheet" type="text/css">
+
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/fh-3.1.4/datatables.min.js"></script>
   </head>
   <body>
   <div class="links">
+    <a href="http://www.ideqc.net/hockey/Resultat.aspx?L=LBC&S=logolbc.jpg&C=ATB&D=CAT&T=SA">BC Rive Nord (Parties)</a>
     <a href="./teams.html">Équipes</a>
     <a href="./players.html">Joueurs</a>
     <a href="./match.html">Parties</a>
   </div>
 
     <h1>Classement des Joueurs - Atome B</h1>
-    <table id="standings">
+    <table id="standings" class="display">
       <thead><tr>
         <th></th>
         <th>Équipe</th>
@@ -37,6 +45,13 @@
   <td>Lynx</td>
   <td>Julien</td><td>Loic</td>
   <td>6</td><td>8</td><td>14</td>
+  <td>5</td>
+</tr>
+<tr class="royaux2">
+  <td></td>
+  <td>Royaux 2</td>
+  <td>Leboeuf</td><td>Léo</td>
+  <td>5</td><td>5</td><td>10</td>
   <td>5</td>
 </tr>
 <tr class="lynx">
@@ -67,12 +82,54 @@
   <td>2</td><td>6</td><td>8</td>
   <td>5</td>
 </tr>
+<tr class="royaux2">
+  <td></td>
+  <td>Royaux 2</td>
+  <td>Lamothe</td><td>Mati</td>
+  <td>5</td><td>2</td><td>7</td>
+  <td>5</td>
+</tr>
+<tr class="gouverneurs1">
+  <td></td>
+  <td>Gouverneurs 1</td>
+  <td>Gagnon</td><td>Quentin</td>
+  <td>5</td><td>2</td><td>7</td>
+  <td>4</td>
+</tr>
 <tr class="mustang">
   <td></td>
   <td>Mustang</td>
   <td>Miller</td><td>Loïc</td>
   <td>5</td><td>2</td><td>7</td>
   <td>5</td>
+</tr>
+<tr class="diablos1">
+  <td></td>
+  <td>Diablos 1</td>
+  <td>Nadeau</td><td>Félix</td>
+  <td>3</td><td>4</td><td>7</td>
+  <td>5</td>
+</tr>
+<tr class="diablos2">
+  <td></td>
+  <td>Diablos 2</td>
+  <td>Lamontagne</td><td>Nathan</td>
+  <td>2</td><td>5</td><td>7</td>
+  <td>4</td>
+</tr>
+<tr class="diablos2">
+  <td></td>
+  <td>Diablos 2</td>
+  <td>Lamontagne</td><td>Noah</td>
+  <td>5</td><td>1</td><td>6</td>
+  <td>4</td>
+</tr>
+<tr class="gouverneurs1">
+  <td></td>
+  <td>Gouverneurs 1</td>
+  <td>Bernier</td><td>Maiden</td>
+  <td>3</td><td>3</td><td>6</td>
+  <td>4</td>
 </tr>
 <tr class="lynx">
   <td></td>
@@ -81,26 +138,19 @@
   <td>3</td><td>3</td><td>6</td>
   <td>5</td>
 </tr>
+<tr class="diablos2">
+  <td></td>
+  <td>Diablos 2</td>
+  <td>Bossé</td><td>Alexis</td>
+  <td>2</td><td>4</td><td>6</td>
+  <td>4</td>
+</tr>
 <tr class="diablos3">
   <td></td>
   <td>Diablos 3</td>
   <td>Voyer</td><td>William</td>
   <td>4</td><td>1</td><td>5</td>
-  <td>2</td>
-</tr>
-<tr class="royaux2">
-  <td></td>
-  <td>Royaux 2</td>
-  <td>Lamothe</td><td>Mati</td>
-  <td>3</td><td>2</td><td>5</td>
-  <td>4</td>
-</tr>
-<tr class="royaux2">
-  <td></td>
-  <td>Royaux 2</td>
-  <td>Leboeuf</td><td>Léo</td>
-  <td>3</td><td>2</td><td>5</td>
-  <td>4</td>
+  <td>3</td>
 </tr>
 <tr class="lynx">
   <td></td>
@@ -109,18 +159,81 @@
   <td>3</td><td>2</td><td>5</td>
   <td>4</td>
 </tr>
-<tr class="diablos1">
+<tr class="diablos2">
   <td></td>
-  <td>Diablos 1</td>
-  <td>Nadeau</td><td>Félix</td>
-  <td>2</td><td>2</td><td>4</td>
+  <td>Diablos 2</td>
+  <td>Poirier</td><td>Thomas</td>
+  <td>3</td><td>2</td><td>5</td>
   <td>4</td>
 </tr>
 <tr class="diablos2">
   <td></td>
   <td>Diablos 2</td>
-  <td>Poirier</td><td>Thomas</td>
+  <td>Grenier</td><td>Maxence</td>
+  <td>3</td><td>2</td><td>5</td>
+  <td>4</td>
+</tr>
+<tr class="gouverneurs2">
+  <td></td>
+  <td>Gouverneurs 2</td>
+  <td>Vézina</td><td>Zachary</td>
+  <td>2</td><td>3</td><td>5</td>
+  <td>4</td>
+</tr>
+<tr class="royaux2">
+  <td></td>
+  <td>Royaux 2</td>
+  <td>Sauvageau</td><td>Édouard-G</td>
+  <td>2</td><td>3</td><td>5</td>
+  <td>5</td>
+</tr>
+<tr class="diablos2">
+  <td></td>
+  <td>Diablos 2</td>
+  <td>Chouinard</td><td>Thomas</td>
+  <td>1</td><td>4</td><td>5</td>
+  <td>4</td>
+</tr>
+<tr class="royaux2">
+  <td></td>
+  <td>Royaux 2</td>
+  <td>Ouellet</td><td>Maxime</td>
+  <td>1</td><td>4</td><td>5</td>
+  <td>5</td>
+</tr>
+<tr class="diablos1">
+  <td></td>
+  <td>Diablos 1</td>
+  <td>Girard</td><td>Olivier</td>
+  <td>4</td><td>0</td><td>4</td>
+  <td>5</td>
+</tr>
+<tr class="royaux2">
+  <td></td>
+  <td>Royaux 2</td>
+  <td>Dumont</td><td>Olivier</td>
+  <td>3</td><td>1</td><td>4</td>
+  <td>4</td>
+</tr>
+<tr class="royaux1">
+  <td></td>
+  <td>Royaux 1</td>
+  <td>Blais-Chabot</td><td>Noah</td>
   <td>2</td><td>2</td><td>4</td>
+  <td>4</td>
+</tr>
+<tr class="diablos1">
+  <td></td>
+  <td>Diablos 1</td>
+  <td>Lepage</td><td>Léo</td>
+  <td>2</td><td>2</td><td>4</td>
+  <td>5</td>
+</tr>
+<tr class="diablos3">
+  <td></td>
+  <td>Diablos 3</td>
+  <td>Gingras</td><td>Jérémy</td>
+  <td>1</td><td>3</td><td>4</td>
   <td>3</td>
 </tr>
 <tr class="chevaliers2">
@@ -128,21 +241,35 @@
   <td>Chevaliers 2</td>
   <td>Dionne</td><td>Jacob</td>
   <td>1</td><td>3</td><td>4</td>
-  <td>3</td>
+  <td>4</td>
+</tr>
+<tr class="gouverneurs1">
+  <td></td>
+  <td>Gouverneurs 1</td>
+  <td>Huard-Belhumeur</td><td>Lukas</td>
+  <td>1</td><td>3</td><td>4</td>
+  <td>4</td>
 </tr>
 <tr class="diablos3">
   <td></td>
   <td>Diablos 3</td>
   <td>Laliberté</td><td>Lennox</td>
   <td>1</td><td>3</td><td>4</td>
-  <td>2</td>
+  <td>3</td>
 </tr>
-<tr class="diablos3">
+<tr class="royaux2">
   <td></td>
-  <td>Diablos 3</td>
-  <td>Gingras</td><td>Jérémy</td>
-  <td>1</td><td>3</td><td>4</td>
-  <td>2</td>
+  <td>Royaux 2</td>
+  <td>Poirier</td><td>Anthony</td>
+  <td>0</td><td>4</td><td>4</td>
+  <td>5</td>
+</tr>
+<tr class="royaux1">
+  <td></td>
+  <td>Royaux 1</td>
+  <td>Audet</td><td>Alexandre</td>
+  <td>3</td><td>0</td><td>3</td>
+  <td>3</td>
 </tr>
 <tr class="chevaliers1">
   <td></td>
@@ -151,11 +278,32 @@
   <td>3</td><td>0</td><td>3</td>
   <td>5</td>
 </tr>
-<tr class="diablos1">
+<tr class="mustang">
   <td></td>
-  <td>Diablos 1</td>
-  <td>Girard</td><td>Olivier</td>
-  <td>3</td><td>0</td><td>3</td>
+  <td>Mustang</td>
+  <td>Blanc</td><td>Émile</td>
+  <td>2</td><td>1</td><td>3</td>
+  <td>5</td>
+</tr>
+<tr class="royaux2">
+  <td></td>
+  <td>Royaux 2</td>
+  <td>Khalil</td><td>Charles-Édouard</td>
+  <td>2</td><td>1</td><td>3</td>
+  <td>5</td>
+</tr>
+<tr class="chevaliers2">
+  <td></td>
+  <td>Chevaliers 2</td>
+  <td>Marmen</td><td>Vincent</td>
+  <td>2</td><td>1</td><td>3</td>
+  <td>4</td>
+</tr>
+<tr class="gouverneurs1">
+  <td></td>
+  <td>Gouverneurs 1</td>
+  <td>Devost</td><td>Simon</td>
+  <td>2</td><td>1</td><td>3</td>
   <td>4</td>
 </tr>
 <tr class="chevaliers1">
@@ -168,51 +316,9 @@
 <tr class="diablos2">
   <td></td>
   <td>Diablos 2</td>
-  <td>Lamontagne</td><td>Nathan</td>
-  <td>2</td><td>1</td><td>3</td>
-  <td>3</td>
-</tr>
-<tr class="chevaliers2">
-  <td></td>
-  <td>Chevaliers 2</td>
-  <td>Marmen</td><td>Vincent</td>
-  <td>2</td><td>1</td><td>3</td>
-  <td>3</td>
-</tr>
-<tr class="mustang">
-  <td></td>
-  <td>Mustang</td>
-  <td>Blanc</td><td>Émile</td>
-  <td>2</td><td>1</td><td>3</td>
-  <td>5</td>
-</tr>
-<tr class="gouverneurs1">
-  <td></td>
-  <td>Gouverneurs 1</td>
-  <td>Bernier</td><td>Maiden</td>
-  <td>2</td><td>1</td><td>3</td>
-  <td>2</td>
-</tr>
-<tr class="diablos1">
-  <td></td>
-  <td>Diablos 1</td>
-  <td>Lepage</td><td>Léo</td>
-  <td>2</td><td>1</td><td>3</td>
+  <td>Charette</td><td>Alek</td>
+  <td>1</td><td>2</td><td>3</td>
   <td>4</td>
-</tr>
-<tr class="gouverneurs2">
-  <td></td>
-  <td>Gouverneurs 2</td>
-  <td>Vézina</td><td>Zachary</td>
-  <td>1</td><td>2</td><td>3</td>
-  <td>2</td>
-</tr>
-<tr class="lynx">
-  <td></td>
-  <td>Lynx</td>
-  <td>Équipe</td><td></td>
-  <td>1</td><td>2</td><td>3</td>
-  <td>5</td>
 </tr>
 <tr class="mustang">
   <td></td>
@@ -221,68 +327,89 @@
   <td>1</td><td>2</td><td>3</td>
   <td>5</td>
 </tr>
+<tr class="gouverneurs2">
+  <td></td>
+  <td>Gouverneurs 2</td>
+  <td>Pelchat</td><td>Xavier</td>
+  <td>1</td><td>2</td><td>3</td>
+  <td>4</td>
+</tr>
+<tr class="royaux1">
+  <td></td>
+  <td>Royaux 1</td>
+  <td>Leroux</td><td>Vincent</td>
+  <td>1</td><td>2</td><td>3</td>
+  <td>4</td>
+</tr>
+<tr class="diablos1">
+  <td></td>
+  <td>Diablos 1</td>
+  <td>Rousseau</td><td>Justin</td>
+  <td>1</td><td>2</td><td>3</td>
+  <td>5</td>
+</tr>
+<tr class="lynx">
+  <td></td>
+  <td>Lynx</td>
+  <td>Équipe</td><td></td>
+  <td>1</td><td>2</td><td>3</td>
+  <td>5</td>
+</tr>
+<tr class="gouverneurs2">
+  <td></td>
+  <td>Gouverneurs 2</td>
+  <td>Drouin</td><td>Émile</td>
+  <td>1</td><td>2</td><td>3</td>
+  <td>4</td>
+</tr>
+<tr class="gouverneurs2">
+  <td></td>
+  <td>Gouverneurs 2</td>
+  <td>Pomerleau</td><td>Cédric</td>
+  <td>0</td><td>3</td><td>3</td>
+  <td>4</td>
+</tr>
 <tr class="chevaliers2">
   <td></td>
   <td>Chevaliers 2</td>
   <td>Chouinard</td><td>Justin</td>
   <td>2</td><td>0</td><td>2</td>
-  <td>3</td>
+  <td>4</td>
 </tr>
-<tr class="royaux1">
+<tr class="gouverneurs2">
   <td></td>
-  <td>Royaux 1</td>
-  <td>Audet</td><td>Alexandre</td>
+  <td>Gouverneurs 2</td>
+  <td>St-Pierre</td><td>Noah-James</td>
   <td>2</td><td>0</td><td>2</td>
-  <td>2</td>
-</tr>
-<tr class="royaux2">
-  <td></td>
-  <td>Royaux 2</td>
-  <td>Dumont</td><td>Olivier</td>
-  <td>2</td><td>0</td><td>2</td>
-  <td>3</td>
-</tr>
-<tr class="gouverneurs1">
-  <td></td>
-  <td>Gouverneurs 1</td>
-  <td>Gagnon</td><td>Quentin</td>
-  <td>2</td><td>0</td><td>2</td>
-  <td>2</td>
-</tr>
-<tr class="diablos2">
-  <td></td>
-  <td>Diablos 2</td>
-  <td>Grenier</td><td>Maxence</td>
-  <td>2</td><td>0</td><td>2</td>
-  <td>3</td>
+  <td>4</td>
 </tr>
 <tr class="chevaliers2">
   <td></td>
   <td>Chevaliers 2</td>
   <td>Roy</td><td>Mathy</td>
   <td>2</td><td>0</td><td>2</td>
-  <td>3</td>
-</tr>
-<tr class="gouverneurs2">
-  <td></td>
-  <td>Gouverneurs 2</td>
-  <td>Pelchat</td><td>Xavier</td>
-  <td>1</td><td>1</td><td>2</td>
-  <td>2</td>
-</tr>
-<tr class="royaux2">
-  <td></td>
-  <td>Royaux 2</td>
-  <td>Khalil</td><td>Charles-Édouard</td>
-  <td>1</td><td>1</td><td>2</td>
   <td>4</td>
 </tr>
-<tr class="lynx">
+<tr class="gouverneurs1">
   <td></td>
-  <td>Lynx</td>
-  <td>Jenkins</td><td>William</td>
+  <td>Gouverneurs 1</td>
+  <td>Goulet</td><td>Éli</td>
+  <td>2</td><td>0</td><td>2</td>
+  <td>3</td>
+</tr>
+<tr class="diablos1">
+  <td></td>
+  <td>Diablos 1</td>
+  <td>Picher</td><td>Hayden</td>
   <td>1</td><td>1</td><td>2</td>
   <td>5</td>
+</tr>
+<tr class="chevaliers2">
+  <td></td>
+  <td>Chevaliers 2</td>
+  <td>Montminy</td><td>Antoine</td>
+  <td>1</td><td>1</td><td>2</td>
+  <td>4</td>
 </tr>
 <tr class="mustang">
   <td></td>
@@ -291,39 +418,60 @@
   <td>1</td><td>1</td><td>2</td>
   <td>3</td>
 </tr>
-<tr class="chevaliers2">
+<tr class="lynx">
   <td></td>
-  <td>Chevaliers 2</td>
-  <td>Montminy</td><td>Antoine</td>
+  <td>Lynx</td>
+  <td>Jenkins</td><td>William</td>
   <td>1</td><td>1</td><td>2</td>
-  <td>3</td>
+  <td>5</td>
 </tr>
 <tr class="diablos1">
   <td></td>
   <td>Diablos 1</td>
   <td>Bisson</td><td>Juliette</td>
   <td>1</td><td>1</td><td>2</td>
+  <td>5</td>
+</tr>
+<tr class="diablos2">
+  <td></td>
+  <td>Diablos 2</td>
+  <td>Équipe</td><td></td>
+  <td>0</td><td>2</td><td>2</td>
   <td>4</td>
 </tr>
-<tr class="diablos1">
+<tr class="mustang">
   <td></td>
-  <td>Diablos 1</td>
-  <td>Rousseau</td><td>Justin</td>
-  <td>1</td><td>1</td><td>2</td>
+  <td>Mustang</td>
+  <td>Asselin</td><td>Louis-Félix</td>
+  <td>0</td><td>2</td><td>2</td>
+  <td>5</td>
+</tr>
+<tr class="gouverneurs1">
+  <td></td>
+  <td>Gouverneurs 1</td>
+  <td>Bergeron</td><td>Antoine</td>
+  <td>0</td><td>2</td><td>2</td>
   <td>4</td>
 </tr>
-<tr class="royaux1">
+<tr class="lynx">
   <td></td>
-  <td>Royaux 1</td>
-  <td>Blais-Chabot</td><td>Noah</td>
-  <td>1</td><td>1</td><td>2</td>
-  <td>3</td>
+  <td>Lynx</td>
+  <td>Dion</td><td>William</td>
+  <td>0</td><td>2</td><td>2</td>
+  <td>5</td>
 </tr>
-<tr class="royaux2">
+<tr class="gouverneurs1">
   <td></td>
-  <td>Royaux 2</td>
-  <td>Sauvageau</td><td>Édouard-G</td>
-  <td>1</td><td>1</td><td>2</td>
+  <td>Gouverneurs 1</td>
+  <td>Chaumont</td><td>Alexis</td>
+  <td>0</td><td>2</td><td>2</td>
+  <td>4</td>
+</tr>
+<tr class="chevaliers2">
+  <td></td>
+  <td>Chevaliers 2</td>
+  <td>Freeman</td><td>Christopher</td>
+  <td>0</td><td>2</td><td>2</td>
   <td>4</td>
 </tr>
 <tr class="chevaliers1">
@@ -333,66 +481,10 @@
   <td>0</td><td>2</td><td>2</td>
   <td>5</td>
 </tr>
-<tr class="lynx">
+<tr class="diablos1">
   <td></td>
-  <td>Lynx</td>
-  <td>Dion</td><td>William</td>
-  <td>0</td><td>2</td><td>2</td>
-  <td>5</td>
-</tr>
-<tr class="diablos2">
-  <td></td>
-  <td>Diablos 2</td>
-  <td>Bossé</td><td>Alexis</td>
-  <td>0</td><td>2</td><td>2</td>
-  <td>3</td>
-</tr>
-<tr class="chevaliers2">
-  <td></td>
-  <td>Chevaliers 2</td>
-  <td>Roy-Simoneau</td><td>Xavier</td>
-  <td>0</td><td>2</td><td>2</td>
-  <td>3</td>
-</tr>
-<tr class="royaux2">
-  <td></td>
-  <td>Royaux 2</td>
-  <td>Poirier</td><td>Anthony</td>
-  <td>0</td><td>2</td><td>2</td>
-  <td>4</td>
-</tr>
-<tr class="mustang">
-  <td></td>
-  <td>Mustang</td>
-  <td>Plourde</td><td>Simon</td>
-  <td>0</td><td>2</td><td>2</td>
-  <td>5</td>
-</tr>
-<tr class="gouverneurs2">
-  <td></td>
-  <td>Gouverneurs 2</td>
-  <td>Pomerleau</td><td>Cédric</td>
-  <td>0</td><td>2</td><td>2</td>
-  <td>2</td>
-</tr>
-<tr class="gouverneurs1">
-  <td></td>
-  <td>Gouverneurs 1</td>
-  <td>Huard-Belhumeur</td><td>Lukas</td>
-  <td>0</td><td>2</td><td>2</td>
-  <td>2</td>
-</tr>
-<tr class="chevaliers2">
-  <td></td>
-  <td>Chevaliers 2</td>
-  <td>Roy</td><td>Louis-Philippe</td>
-  <td>0</td><td>2</td><td>2</td>
-  <td>3</td>
-</tr>
-<tr class="chevaliers1">
-  <td></td>
-  <td>Chevaliers 1</td>
-  <td>Gagnon</td><td>David</td>
+  <td>Diablos 1</td>
+  <td>Jutras</td><td>Rémi</td>
   <td>0</td><td>2</td><td>2</td>
   <td>5</td>
 </tr>
@@ -403,108 +495,45 @@
   <td>0</td><td>2</td><td>2</td>
   <td>5</td>
 </tr>
-<tr class="mustang">
+<tr class="chevaliers2">
   <td></td>
-  <td>Mustang</td>
-  <td>Asselin</td><td>Louis-Félix</td>
+  <td>Chevaliers 2</td>
+  <td>Roy-Simoneau</td><td>Xavier</td>
+  <td>0</td><td>2</td><td>2</td>
+  <td>4</td>
+</tr>
+<tr class="royaux2">
+  <td></td>
+  <td>Royaux 2</td>
+  <td>Desgagné</td><td>Christophe</td>
   <td>0</td><td>2</td><td>2</td>
   <td>5</td>
 </tr>
-<tr class="royaux1">
+<tr class="chevaliers1">
   <td></td>
-  <td>Royaux 1</td>
-  <td>Leroux</td><td>Vincent</td>
+  <td>Chevaliers 1</td>
+  <td>Gagnon</td><td>David</td>
   <td>0</td><td>2</td><td>2</td>
-  <td>3</td>
+  <td>5</td>
 </tr>
 <tr class="chevaliers2">
   <td></td>
   <td>Chevaliers 2</td>
-  <td>Freeman</td><td>Christopher</td>
+  <td>Roy</td><td>Louis-Philippe</td>
   <td>0</td><td>2</td><td>2</td>
-  <td>3</td>
+  <td>4</td>
 </tr>
-<tr class="diablos2">
+<tr class="mustang">
   <td></td>
-  <td>Diablos 2</td>
-  <td>Charette</td><td>Alek</td>
+  <td>Mustang</td>
+  <td>Plourde</td><td>Simon</td>
   <td>0</td><td>2</td><td>2</td>
-  <td>3</td>
-</tr>
-<tr class="diablos2">
-  <td></td>
-  <td>Diablos 2</td>
-  <td>Chouinard</td><td>Thomas</td>
-  <td>0</td><td>2</td><td>2</td>
-  <td>3</td>
-</tr>
-<tr class="royaux1">
-  <td></td>
-  <td>Royaux 1</td>
-  <td>Lemieux</td><td>Olivier</td>
-  <td>1</td><td>0</td><td>1</td>
-  <td>3</td>
+  <td>5</td>
 </tr>
 <tr class="gouverneurs1">
   <td></td>
   <td>Gouverneurs 1</td>
   <td>Équipe</td><td></td>
-  <td>1</td><td>0</td><td>1</td>
-  <td>2</td>
-</tr>
-<tr class="diablos2">
-  <td></td>
-  <td>Diablos 2</td>
-  <td>Bérubé-Jean</td><td>Marcus</td>
-  <td>1</td><td>0</td><td>1</td>
-  <td>3</td>
-</tr>
-<tr class="gouverneurs2">
-  <td></td>
-  <td>Gouverneurs 2</td>
-  <td>St-Cyr</td><td>Julien-Thomas</td>
-  <td>1</td><td>0</td><td>1</td>
-  <td>2</td>
-</tr>
-<tr class="mustang">
-  <td></td>
-  <td>Mustang</td>
-  <td>Boucher</td><td>Nicolas</td>
-  <td>1</td><td>0</td><td>1</td>
-  <td>4</td>
-</tr>
-<tr class="diablos3">
-  <td></td>
-  <td>Diablos 3</td>
-  <td>Delisle</td><td>Jérémy</td>
-  <td>1</td><td>0</td><td>1</td>
-  <td>2</td>
-</tr>
-<tr class="gouverneurs1">
-  <td></td>
-  <td>Gouverneurs 1</td>
-  <td>Goulet</td><td>Éli</td>
-  <td>1</td><td>0</td><td>1</td>
-  <td>2</td>
-</tr>
-<tr class="gouverneurs1">
-  <td></td>
-  <td>Gouverneurs 1</td>
-  <td>Devost</td><td>Simon</td>
-  <td>1</td><td>0</td><td>1</td>
-  <td>2</td>
-</tr>
-<tr class="gouverneurs2">
-  <td></td>
-  <td>Gouverneurs 2</td>
-  <td>St-Pierre</td><td>Noah-James</td>
-  <td>1</td><td>0</td><td>1</td>
-  <td>2</td>
-</tr>
-<tr class="diablos1">
-  <td></td>
-  <td>Diablos 1</td>
-  <td>Picher</td><td>Hayden</td>
   <td>1</td><td>0</td><td>1</td>
   <td>4</td>
 </tr>
@@ -515,10 +544,17 @@
   <td>1</td><td>0</td><td>1</td>
   <td>5</td>
 </tr>
-<tr class="royaux1">
+<tr class="mustang">
   <td></td>
-  <td>Royaux 1</td>
-  <td>Blanchette</td><td>Samuel</td>
+  <td>Mustang</td>
+  <td>Boucher</td><td>Nicolas</td>
+  <td>1</td><td>0</td><td>1</td>
+  <td>4</td>
+</tr>
+<tr class="gouverneurs2">
+  <td></td>
+  <td>Gouverneurs 2</td>
+  <td>Robitaille</td><td>Louis-Félix V.</td>
   <td>1</td><td>0</td><td>1</td>
   <td>3</td>
 </tr>
@@ -527,41 +563,55 @@
   <td>Gouverneurs 2</td>
   <td>Kish</td><td>Victor</td>
   <td>1</td><td>0</td><td>1</td>
-  <td>2</td>
+  <td>4</td>
 </tr>
 <tr class="diablos3">
   <td></td>
   <td>Diablos 3</td>
-  <td>Harnois</td><td>Samuel</td>
-  <td>0</td><td>1</td><td>1</td>
-  <td>2</td>
+  <td>Delisle</td><td>Jérémy</td>
+  <td>1</td><td>0</td><td>1</td>
+  <td>3</td>
 </tr>
-<tr class="chevaliers1">
+<tr class="royaux1">
   <td></td>
-  <td>Chevaliers 1</td>
-  <td>Houle</td><td>Sunny</td>
-  <td>0</td><td>1</td><td>1</td>
+  <td>Royaux 1</td>
+  <td>Lemieux</td><td>Olivier</td>
+  <td>1</td><td>0</td><td>1</td>
+  <td>4</td>
+</tr>
+<tr class="diablos1">
+  <td></td>
+  <td>Diablos 1</td>
+  <td>Pilote</td><td>Edward</td>
+  <td>1</td><td>0</td><td>1</td>
   <td>5</td>
 </tr>
 <tr class="gouverneurs2">
   <td></td>
   <td>Gouverneurs 2</td>
-  <td>Drouin</td><td>Émile</td>
-  <td>0</td><td>1</td><td>1</td>
-  <td>2</td>
+  <td>St-Cyr</td><td>Julien-Thomas</td>
+  <td>1</td><td>0</td><td>1</td>
+  <td>4</td>
 </tr>
 <tr class="gouverneurs1">
   <td></td>
   <td>Gouverneurs 1</td>
-  <td>Vallée</td><td>Warrick</td>
-  <td>0</td><td>1</td><td>1</td>
-  <td>2</td>
+  <td>Molzan</td><td>Max</td>
+  <td>1</td><td>0</td><td>1</td>
+  <td>4</td>
+</tr>
+<tr class="royaux1">
+  <td></td>
+  <td>Royaux 1</td>
+  <td>Blanchette</td><td>Samuel</td>
+  <td>1</td><td>0</td><td>1</td>
+  <td>4</td>
 </tr>
 <tr class="diablos2">
   <td></td>
   <td>Diablos 2</td>
-  <td>Trépanier</td><td>David</td>
-  <td>0</td><td>1</td><td>1</td>
+  <td>Bérubé-Jean</td><td>Marcus</td>
+  <td>1</td><td>0</td><td>1</td>
   <td>3</td>
 </tr>
 <tr class="chevaliers1">
@@ -571,24 +621,52 @@
   <td>0</td><td>1</td><td>1</td>
   <td>5</td>
 </tr>
+<tr class="diablos1">
+  <td></td>
+  <td>Diablos 1</td>
+  <td>Plante</td><td>Laurent-Étienne</td>
+  <td>0</td><td>1</td><td>1</td>
+  <td>5</td>
+</tr>
+<tr class="royaux1">
+  <td></td>
+  <td>Royaux 1</td>
+  <td>Ratté-Tremblay</td><td>Raphaël</td>
+  <td>0</td><td>1</td><td>1</td>
+  <td>3</td>
+</tr>
 <tr class="royaux2">
   <td></td>
   <td>Royaux 2</td>
-  <td>Desgagné</td><td>Christophe</td>
+  <td>Allard</td><td>Guillaume</td>
+  <td>0</td><td>1</td><td>1</td>
+  <td>5</td>
+</tr>
+<tr class="diablos2">
+  <td></td>
+  <td>Diablos 2</td>
+  <td>Gagnon</td><td>Gabriel</td>
   <td>0</td><td>1</td><td>1</td>
   <td>4</td>
-</tr>
-<tr class="diablos3">
-  <td></td>
-  <td>Diablos 3</td>
-  <td>Genest</td><td>Dominic</td>
-  <td>0</td><td>1</td><td>1</td>
-  <td>2</td>
 </tr>
 <tr class="diablos1">
   <td></td>
   <td>Diablos 1</td>
   <td>Vachon</td><td>Victor</td>
+  <td>0</td><td>1</td><td>1</td>
+  <td>5</td>
+</tr>
+<tr class="diablos3">
+  <td></td>
+  <td>Diablos 3</td>
+  <td>Villeneuve</td><td>Félix</td>
+  <td>0</td><td>1</td><td>1</td>
+  <td>3</td>
+</tr>
+<tr class="gouverneurs2">
+  <td></td>
+  <td>Gouverneurs 2</td>
+  <td>Boisvert</td><td>Juliette</td>
   <td>0</td><td>1</td><td>1</td>
   <td>4</td>
 </tr>
@@ -599,12 +677,12 @@
   <td>0</td><td>1</td><td>1</td>
   <td>5</td>
 </tr>
-<tr class="diablos1">
+<tr class="royaux2">
   <td></td>
-  <td>Diablos 1</td>
-  <td>Plante</td><td>Laurent-Étienne</td>
+  <td>Royaux 2</td>
+  <td>Bourré</td><td>Colin</td>
   <td>0</td><td>1</td><td>1</td>
-  <td>4</td>
+  <td>5</td>
 </tr>
 <tr class="chevaliers1">
   <td></td>
@@ -613,17 +691,87 @@
   <td>0</td><td>1</td><td>1</td>
   <td>5</td>
 </tr>
+<tr class="chevaliers2">
+  <td></td>
+  <td>Chevaliers 2</td>
+  <td>Robert</td><td>Alexis</td>
+  <td>0</td><td>1</td><td>1</td>
+  <td>4</td>
+</tr>
+<tr class="diablos3">
+  <td></td>
+  <td>Diablos 3</td>
+  <td>Harnois</td><td>Samuel</td>
+  <td>0</td><td>1</td><td>1</td>
+  <td>3</td>
+</tr>
+<tr class="royaux2">
+  <td></td>
+  <td>Royaux 2</td>
+  <td>Freiha</td><td>Alexandre</td>
+  <td>0</td><td>1</td><td>1</td>
+  <td>5</td>
+</tr>
+<tr class="diablos3">
+  <td></td>
+  <td>Diablos 3</td>
+  <td>Bertrand</td><td>Alysson</td>
+  <td>0</td><td>1</td><td>1</td>
+  <td>3</td>
+</tr>
+<tr class="diablos2">
+  <td></td>
+  <td>Diablos 2</td>
+  <td>Trépanier</td><td>David</td>
+  <td>0</td><td>1</td><td>1</td>
+  <td>4</td>
+</tr>
+<tr class="royaux1">
+  <td></td>
+  <td>Royaux 1</td>
+  <td>Gauthier</td><td>Anthony</td>
+  <td>0</td><td>1</td><td>1</td>
+  <td>4</td>
+</tr>
+<tr class="diablos2">
+  <td></td>
+  <td>Diablos 2</td>
+  <td>Soucy</td><td>Samuel</td>
+  <td>0</td><td>1</td><td>1</td>
+  <td>4</td>
+</tr>
+<tr class="gouverneurs2">
+  <td></td>
+  <td>Gouverneurs 2</td>
+  <td>Lemieux</td><td>Ulysse</td>
+  <td>0</td><td>1</td><td>1</td>
+  <td>3</td>
+</tr>
+<tr class="gouverneurs1">
+  <td></td>
+  <td>Gouverneurs 1</td>
+  <td>Frigon</td><td>Antoine</td>
+  <td>0</td><td>1</td><td>1</td>
+  <td>4</td>
+</tr>
 <tr class="diablos3">
   <td></td>
   <td>Diablos 3</td>
   <td>Mathieu</td><td>Dylan</td>
   <td>0</td><td>1</td><td>1</td>
-  <td>2</td>
+  <td>3</td>
 </tr>
-<tr class="chevaliers2">
+<tr class="gouverneurs1">
   <td></td>
-  <td>Chevaliers 2</td>
-  <td>Robert</td><td>Alexis</td>
+  <td>Gouverneurs 1</td>
+  <td>Vallée</td><td>Warrick</td>
+  <td>0</td><td>1</td><td>1</td>
+  <td>4</td>
+</tr>
+<tr class="diablos3">
+  <td></td>
+  <td>Diablos 3</td>
+  <td>Genest</td><td>Dominic</td>
   <td>0</td><td>1</td><td>1</td>
   <td>3</td>
 </tr>
@@ -632,68 +780,26 @@
   <td>Diablos 1</td>
   <td>Lachance</td><td>Philip</td>
   <td>0</td><td>1</td><td>1</td>
-  <td>4</td>
+  <td>5</td>
 </tr>
-<tr class="diablos1">
+<tr class="chevaliers1">
   <td></td>
-  <td>Diablos 1</td>
-  <td>Jutras</td><td>Rémi</td>
+  <td>Chevaliers 1</td>
+  <td>Houle</td><td>Sunny</td>
   <td>0</td><td>1</td><td>1</td>
-  <td>4</td>
-</tr>
-<tr class="diablos3">
-  <td></td>
-  <td>Diablos 3</td>
-  <td>Villeneuve</td><td>Félix</td>
-  <td>0</td><td>1</td><td>1</td>
-  <td>2</td>
+  <td>5</td>
 </tr>
 <tr class="gouverneurs1">
   <td></td>
   <td>Gouverneurs 1</td>
-  <td>Frigon</td><td>Antoine</td>
-  <td>0</td><td>1</td><td>1</td>
-  <td>2</td>
-</tr>
-<tr class="royaux2">
-  <td></td>
-  <td>Royaux 2</td>
-  <td>Freiha</td><td>Alexandre</td>
-  <td>0</td><td>1</td><td>1</td>
-  <td>4</td>
-</tr>
-<tr class="diablos3">
-  <td></td>
-  <td>Diablos 3</td>
-  <td>Bertrand</td><td>Alysson</td>
-  <td>0</td><td>1</td><td>1</td>
-  <td>2</td>
-</tr>
-<tr class="gouverneurs1">
-  <td></td>
-  <td>Gouverneurs 1</td>
-  <td>Bergeron</td><td>Antoine</td>
-  <td>0</td><td>1</td><td>1</td>
-  <td>2</td>
-</tr>
-<tr class="royaux1">
-  <td></td>
-  <td>Royaux 1</td>
-  <td>Gauthier</td><td>Anthony</td>
-  <td>0</td><td>1</td><td>1</td>
-  <td>3</td>
-</tr>
-<tr class="diablos1">
-  <td></td>
-  <td>Diablos 1</td>
-  <td>Pilote</td><td>Edward</td>
+  <td>Blanchet</td><td>Olivier</td>
   <td>0</td><td>0</td><td>0</td>
   <td>4</td>
 </tr>
 <tr class="chevaliers1">
   <td></td>
   <td>Chevaliers 1</td>
-  <td>Germain</td><td>William</td>
+  <td>Dufour</td><td>Luka</td>
   <td>0</td><td>0</td><td>0</td>
   <td>5</td>
 </tr>
@@ -711,108 +817,10 @@
   <td>0</td><td>0</td><td>0</td>
   <td>5</td>
 </tr>
-<tr class="royaux2">
+<tr class="chevaliers2">
   <td></td>
-  <td>Royaux 2</td>
-  <td>Allard</td><td>Guillaume</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>4</td>
-</tr>
-<tr class="chevaliers1">
-  <td></td>
-  <td>Chevaliers 1</td>
-  <td>Dufour</td><td>Luka</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>5</td>
-</tr>
-<tr class="diablos1">
-  <td></td>
-  <td>Diablos 1</td>
-  <td>Équipe</td><td></td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>4</td>
-</tr>
-<tr class="chevaliers1">
-  <td></td>
-  <td>Chevaliers 1</td>
-  <td>Bélanger</td><td>Loic</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>5</td>
-</tr>
-<tr class="diablos1">
-  <td></td>
-  <td>Diablos 1</td>
-  <td>David</td><td>Océanne</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>2</td>
-</tr>
-<tr class="gouverneurs1">
-  <td></td>
-  <td>Gouverneurs 1</td>
-  <td>Lebrun</td><td>Carl-Éric</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>2</td>
-</tr>
-<tr class="gouverneurs2">
-  <td></td>
-  <td>Gouverneurs 2</td>
-  <td>Dion</td><td>Laurent</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>2</td>
-</tr>
-<tr class="gouverneurs1">
-  <td></td>
-  <td>Gouverneurs 1</td>
-  <td>Molzan</td><td>Max</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>2</td>
-</tr>
-<tr class="gouverneurs2">
-  <td></td>
-  <td>Gouverneurs 2</td>
-  <td>Équipe</td><td></td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>2</td>
-</tr>
-<tr class="gouverneurs1">
-  <td></td>
-  <td>Gouverneurs 1</td>
-  <td>Pellerin</td><td>Marily</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>2</td>
-</tr>
-<tr class="gouverneurs2">
-  <td></td>
-  <td>Gouverneurs 2</td>
-  <td>Lemieux</td><td>Ulysse</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>2</td>
-</tr>
-<tr class="royaux1">
-  <td></td>
-  <td>Royaux 1</td>
-  <td>Drolet</td><td>Xavier</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>3</td>
-</tr>
-<tr class="diablos2">
-  <td></td>
-  <td>Diablos 2</td>
-  <td>Lamontagne</td><td>Noah</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>3</td>
-</tr>
-<tr class="royaux1">
-  <td></td>
-  <td>Royaux 1</td>
-  <td>Équipe</td><td></td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>3</td>
-</tr>
-<tr class="royaux2">
-  <td></td>
-  <td>Royaux 2</td>
-  <td>Ouellet</td><td>Maxime</td>
+  <td>Chevaliers 2</td>
+  <td>Bourré</td><td>Vincent</td>
   <td>0</td><td>0</td><td>0</td>
   <td>4</td>
 </tr>
@@ -821,12 +829,75 @@
   <td>Diablos 3</td>
   <td>Blanchette</td><td>Guillaume</td>
   <td>0</td><td>0</td><td>0</td>
-  <td>2</td>
+  <td>3</td>
 </tr>
-<tr class="diablos2">
+<tr class="gouverneurs2">
   <td></td>
-  <td>Diablos 2</td>
-  <td>Gagnon</td><td>Gabriel</td>
+  <td>Gouverneurs 2</td>
+  <td>Provençal</td><td>Alexandre</td>
+  <td>0</td><td>0</td><td>0</td>
+  <td>4</td>
+</tr>
+<tr class="mustang">
+  <td></td>
+  <td>Mustang</td>
+  <td>Lachance</td><td>Mathis</td>
+  <td>0</td><td>0</td><td>0</td>
+  <td>3</td>
+</tr>
+<tr class="royaux1">
+  <td></td>
+  <td>Royaux 1</td>
+  <td>Latulippe</td><td>Emerick</td>
+  <td>0</td><td>0</td><td>0</td>
+  <td>4</td>
+</tr>
+<tr class="diablos3">
+  <td></td>
+  <td>Diablos 3</td>
+  <td>Équipe</td><td></td>
+  <td>0</td><td>0</td><td>0</td>
+  <td>3</td>
+</tr>
+<tr class="chevaliers2">
+  <td></td>
+  <td>Chevaliers 2</td>
+  <td>Desjardins</td><td>Maxim</td>
+  <td>0</td><td>0</td><td>0</td>
+  <td>4</td>
+</tr>
+<tr class="chevaliers1">
+  <td></td>
+  <td>Chevaliers 1</td>
+  <td>Germain</td><td>William</td>
+  <td>0</td><td>0</td><td>0</td>
+  <td>5</td>
+</tr>
+<tr class="gouverneurs1">
+  <td></td>
+  <td>Gouverneurs 1</td>
+  <td>Cantin</td><td>Thomas-Louis</td>
+  <td>0</td><td>0</td><td>0</td>
+  <td>4</td>
+</tr>
+<tr class="mustang">
+  <td></td>
+  <td>Mustang</td>
+  <td>Hamelin</td><td>Philippe</td>
+  <td>0</td><td>0</td><td>0</td>
+  <td>5</td>
+</tr>
+<tr class="royaux1">
+  <td></td>
+  <td>Royaux 1</td>
+  <td>Drolet</td><td>Xavier</td>
+  <td>0</td><td>0</td><td>0</td>
+  <td>4</td>
+</tr>
+<tr class="chevaliers1">
+  <td></td>
+  <td>Chevaliers 1</td>
+  <td>Grégoire</td><td>Xavier</td>
   <td>0</td><td>0</td><td>0</td>
   <td>3</td>
 </tr>
@@ -835,112 +906,49 @@
   <td>Chevaliers 2</td>
   <td>Lévesque</td><td>Benjamin</td>
   <td>0</td><td>0</td><td>0</td>
-  <td>3</td>
+  <td>4</td>
 </tr>
-<tr class="diablos2">
+<tr class="diablos1">
   <td></td>
-  <td>Diablos 2</td>
-  <td>Équipe</td><td></td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>3</td>
-</tr>
-<tr class="diablos3">
-  <td></td>
-  <td>Diablos 3</td>
-  <td>Équipe</td><td></td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>2</td>
-</tr>
-<tr class="mustang">
-  <td></td>
-  <td>Mustang</td>
+  <td>Diablos 1</td>
   <td>Équipe</td><td></td>
   <td>0</td><td>0</td><td>0</td>
   <td>5</td>
-</tr>
-<tr class="chevaliers2">
-  <td></td>
-  <td>Chevaliers 2</td>
-  <td>Équipe</td><td></td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>3</td>
-</tr>
-<tr class="gouverneurs1">
-  <td></td>
-  <td>Gouverneurs 1</td>
-  <td>Cantin</td><td>Thomas-Louis</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>2</td>
-</tr>
-<tr class="mustang">
-  <td></td>
-  <td>Mustang</td>
-  <td>Bilodeau</td><td>Antoine</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>5</td>
-</tr>
-<tr class="chevaliers1">
-  <td></td>
-  <td>Chevaliers 1</td>
-  <td>Lavoie</td><td>Olivier</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>5</td>
-</tr>
-<tr class="royaux1">
-  <td></td>
-  <td>Royaux 1</td>
-  <td>Gilbert</td><td>William</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>3</td>
 </tr>
 <tr class="royaux2">
   <td></td>
   <td>Royaux 2</td>
-  <td>Bourré</td><td>Colin</td>
+  <td>Équipe</td><td></td>
   <td>0</td><td>0</td><td>0</td>
-  <td>4</td>
-</tr>
-<tr class="chevaliers2">
-  <td></td>
-  <td>Chevaliers 2</td>
-  <td>Desjardins</td><td>Maxim</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>3</td>
-</tr>
-<tr class="gouverneurs2">
-  <td></td>
-  <td>Gouverneurs 2</td>
-  <td>Boisvert</td><td>Juliette</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>2</td>
+  <td>5</td>
 </tr>
 <tr class="diablos3">
   <td></td>
   <td>Diablos 3</td>
   <td>Lebel</td><td>Marilou</td>
   <td>0</td><td>0</td><td>0</td>
-  <td>2</td>
+  <td>3</td>
 </tr>
-<tr class="royaux2">
+<tr class="gouverneurs1">
   <td></td>
-  <td>Royaux 2</td>
-  <td>Équipe</td><td></td>
+  <td>Gouverneurs 1</td>
+  <td>Lebrun</td><td>Carl-Éric</td>
   <td>0</td><td>0</td><td>0</td>
   <td>4</td>
 </tr>
-<tr class="royaux1">
+<tr class="diablos1">
   <td></td>
-  <td>Royaux 1</td>
-  <td>Latulippe</td><td>Emerick</td>
+  <td>Diablos 1</td>
+  <td>David</td><td>Océanne</td>
   <td>0</td><td>0</td><td>0</td>
   <td>3</td>
 </tr>
-<tr class="gouverneurs2">
+<tr class="gouverneurs1">
   <td></td>
-  <td>Gouverneurs 2</td>
-  <td>Provençal</td><td>Alexandre</td>
+  <td>Gouverneurs 1</td>
+  <td>Pellerin</td><td>Marily</td>
   <td>0</td><td>0</td><td>0</td>
-  <td>2</td>
+  <td>3</td>
 </tr>
 <tr class="diablos3">
   <td></td>
@@ -954,91 +962,28 @@
   <td>Gouverneurs 2</td>
   <td>Vaillancourt</td><td>Alex</td>
   <td>0</td><td>0</td><td>0</td>
-  <td>2</td>
-</tr>
-<tr class="chevaliers2">
-  <td></td>
-  <td>Chevaliers 2</td>
-  <td>Bourré</td><td>Vincent</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>3</td>
-</tr>
-<tr class="gouverneurs1">
-  <td></td>
-  <td>Gouverneurs 1</td>
-  <td>Blanchet</td><td>Olivier</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>2</td>
-</tr>
-<tr class="lynx">
-  <td></td>
-  <td>Lynx</td>
-  <td>Perron</td><td>Alicia</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>5</td>
+  <td>4</td>
 </tr>
 <tr class="chevaliers1">
   <td></td>
   <td>Chevaliers 1</td>
-  <td>Grégoire</td><td>Xavier</td>
+  <td>Lavoie</td><td>Olivier</td>
   <td>0</td><td>0</td><td>0</td>
-  <td>3</td>
-</tr>
-<tr class="diablos2">
-  <td></td>
-  <td>Diablos 2</td>
-  <td>Soucy</td><td>Samuel</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>3</td>
-</tr>
-<tr class="gouverneurs2">
-  <td></td>
-  <td>Gouverneurs 2</td>
-  <td>Robitaille</td><td>Louis-Félix V.</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>1</td>
-</tr>
-<tr class="royaux1">
-  <td></td>
-  <td>Royaux 1</td>
-  <td>Ratté-Tremblay</td><td>Raphaël</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>2</td>
+  <td>5</td>
 </tr>
 <tr class="chevaliers2">
   <td></td>
   <td>Chevaliers 2</td>
-  <td>Garneau</td><td>Mathis</td>
+  <td>Équipe</td><td></td>
   <td>0</td><td>0</td><td>0</td>
-  <td>2</td>
-</tr>
-<tr class="chevaliers1">
-  <td></td>
-  <td>Chevaliers 1</td>
-  <td>Hamel</td><td>Frédérick</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>1</td>
+  <td>4</td>
 </tr>
 <tr class="mustang">
   <td></td>
   <td>Mustang</td>
-  <td>Hamelin</td><td>Philippe</td>
+  <td>Équipe</td><td></td>
   <td>0</td><td>0</td><td>0</td>
   <td>5</td>
-</tr>
-<tr class="mustang">
-  <td></td>
-  <td>Mustang</td>
-  <td>Lachance</td><td>Mathis</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>3</td>
-</tr>
-<tr class="gouverneurs1">
-  <td></td>
-  <td>Gouverneurs 1</td>
-  <td>Chaumont</td><td>Alexis</td>
-  <td>0</td><td>0</td><td>0</td>
-  <td>2</td>
 </tr>
 <tr class="royaux1">
   <td></td>
@@ -1047,12 +992,82 @@
   <td>0</td><td>0</td><td>0</td>
   <td>3</td>
 </tr>
+<tr class="chevaliers1">
+  <td></td>
+  <td>Chevaliers 1</td>
+  <td>Hamel</td><td>Frédérick</td>
+  <td>0</td><td>0</td><td>0</td>
+  <td>1</td>
+</tr>
+<tr class="gouverneurs2">
+  <td></td>
+  <td>Gouverneurs 2</td>
+  <td>Dion</td><td>Laurent</td>
+  <td>0</td><td>0</td><td>0</td>
+  <td>4</td>
+</tr>
 <tr class="gouverneurs2">
   <td></td>
   <td>Gouverneurs 2</td>
   <td>St-Onge</td><td>Mathieu</td>
   <td>0</td><td>0</td><td>0</td>
+  <td>4</td>
+</tr>
+<tr class="diablos2">
+  <td></td>
+  <td>Diablos 2</td>
+  <td>Dinelle</td><td>Zakary</td>
+  <td>0</td><td>0</td><td>0</td>
+  <td>1</td>
+</tr>
+<tr class="lynx">
+  <td></td>
+  <td>Lynx</td>
+  <td>Perron</td><td>Alicia</td>
+  <td>0</td><td>0</td><td>0</td>
+  <td>5</td>
+</tr>
+<tr class="mustang">
+  <td></td>
+  <td>Mustang</td>
+  <td>Bilodeau</td><td>Antoine</td>
+  <td>0</td><td>0</td><td>0</td>
+  <td>5</td>
+</tr>
+<tr class="chevaliers2">
+  <td></td>
+  <td>Chevaliers 2</td>
+  <td>Garneau</td><td>Mathis</td>
+  <td>0</td><td>0</td><td>0</td>
   <td>2</td>
+</tr>
+<tr class="royaux1">
+  <td></td>
+  <td>Royaux 1</td>
+  <td>Gilbert</td><td>William</td>
+  <td>0</td><td>0</td><td>0</td>
+  <td>4</td>
+</tr>
+<tr class="chevaliers1">
+  <td></td>
+  <td>Chevaliers 1</td>
+  <td>Bélanger</td><td>Loic</td>
+  <td>0</td><td>0</td><td>0</td>
+  <td>5</td>
+</tr>
+<tr class="gouverneurs2">
+  <td></td>
+  <td>Gouverneurs 2</td>
+  <td>Équipe</td><td></td>
+  <td>0</td><td>0</td><td>0</td>
+  <td>4</td>
+</tr>
+<tr class="royaux1">
+  <td></td>
+  <td>Royaux 1</td>
+  <td>Équipe</td><td></td>
+  <td>0</td><td>0</td><td>0</td>
+  <td>4</td>
 </tr>
       </tbody>
     </table>
@@ -1060,6 +1075,7 @@
 $(document).ready(function() {
   $('#standings').DataTable({
     "pageLength": 200,
+    fixedHeader: true,
     lengthChange: false,
     paging: false,
     searching: false,

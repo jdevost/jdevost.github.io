@@ -1,103 +1,183 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.datatables.net/1.10.19/css/dataTables.jqueryui.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/fh-3.1.4/datatables.min.css"/>
     <link href="main.css" rel="stylesheet" type="text/css">
+
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/fh-3.1.4/datatables.min.js"></script>
   </head>
   <body>
   <div class="links">
+    <a href="http://www.ideqc.net/hockey/Resultat.aspx?L=LBC&S=logolbc.jpg&C=ATB&D=CAT&T=SA">BC Rive Nord (Parties)</a>
     <a href="./teams.html">Équipes</a>
     <a href="./players.html">Joueurs</a>
     <a href="./match.html">Parties</a>
   </div>
 
     <h1>Classements Equipes - Atome B</h1>
-    <table id="standings">
+    <table id="standings" class="display">
       <thead><tr>
         <th></th>
         <th>Equipe</th>
+        <th>Points</th>
         <th>PJ</th>
+        <th>W</th>
+        <th>L</th>
+        <th>T</th>
         <th>bp</th>
         <th>bc</th>
+        <th>Comp</th>
+        <th>Moyenne</th>
       </tr></thead>
       <tbody>
-      <tr class="">
+      <tr class="mustang">
   <td></td>
-  <td class="mustang">Mustang</td>
+  <td>Mustang</td>
+  <td>7</td>
   <td>5</td>
+  <td>0</td>
+  <td>3</td>
+  <td>2</td>
   <td>10</td>
   <td>19</td>
-</tr>
-<tr class="">
-  <td></td>
-  <td class="lynx">Lynx</td>
   <td>5</td>
+  <td>46.67</td>
+</tr>
+<tr class="lynx">
+  <td></td>
+  <td>Lynx</td>
+  <td>15</td>
+  <td>5</td>
+  <td>5</td>
+  <td>0</td>
+  <td>0</td>
   <td>38</td>
   <td>5</td>
-</tr>
-<tr class="">
-  <td></td>
-  <td class="royaux1">Royaux 1</td>
-  <td>3</td>
   <td>5</td>
-  <td>16</td>
+  <td>100</td>
 </tr>
-<tr class="">
+<tr class="royaux1">
   <td></td>
-  <td class="royaux2">Royaux 2</td>
+  <td>Royaux 1</td>
+  <td>7</td>
   <td>4</td>
-  <td>10</td>
+  <td>1</td>
+  <td>2</td>
+  <td>1</td>
+  <td>8</td>
   <td>18</td>
+  <td>4</td>
+  <td>58.33</td>
 </tr>
-<tr class="">
+<tr class="royaux2">
   <td></td>
-  <td class="chevaliers1">Chevaliers 1</td>
+  <td>Royaux 2</td>
+  <td>11</td>
   <td>5</td>
+  <td>2</td>
+  <td>1</td>
+  <td>2</td>
+  <td>18</td>
+  <td>18</td>
+  <td>5</td>
+  <td>73.33</td>
+</tr>
+<tr class="chevaliers1">
+  <td></td>
+  <td>Chevaliers 1</td>
+  <td>7</td>
+  <td>5</td>
+  <td>0</td>
+  <td>3</td>
+  <td>2</td>
   <td>6</td>
   <td>15</td>
+  <td>5</td>
+  <td>46.67</td>
 </tr>
-<tr class="">
+<tr class="chevaliers2">
   <td></td>
-  <td class="chevaliers2">Chevaliers 2</td>
-  <td>3</td>
+  <td>Chevaliers 2</td>
   <td>8</td>
-  <td>7</td>
-</tr>
-<tr class="">
-  <td></td>
-  <td class="diablos1">Diablos 1</td>
   <td>4</td>
-  <td>10</td>
+  <td>1</td>
+  <td>1</td>
+  <td>2</td>
+  <td>8</td>
+  <td>15</td>
+  <td>4</td>
+  <td>66.67</td>
+</tr>
+<tr class="diablos1">
+  <td></td>
+  <td>Diablos 1</td>
+  <td>9</td>
+  <td>5</td>
+  <td>1</td>
+  <td>2</td>
+  <td>2</td>
   <td>13</td>
-</tr>
-<tr class="">
-  <td></td>
-  <td class="diablos2">Diablos 2</td>
-  <td>3</td>
-  <td>7</td>
-  <td>3</td>
-</tr>
-<tr class="">
-  <td></td>
-  <td class="gouverneurs1">Gouverneurs 1</td>
-  <td>2</td>
-  <td>7</td>
+  <td>16</td>
   <td>5</td>
+  <td>60</td>
 </tr>
-<tr class="">
+<tr class="diablos2">
   <td></td>
-  <td class="gouverneurs2">Gouverneurs 2</td>
-  <td>2</td>
-  <td>5</td>
-  <td>6</td>
+  <td>Diablos 2</td>
+  <td>10</td>
+  <td>4</td>
+  <td>3</td>
+  <td>1</td>
+  <td>0</td>
+  <td>18</td>
+  <td>4</td>
+  <td>4</td>
+  <td>83.33</td>
 </tr>
-<tr class="">
+<tr class="gouverneurs1">
   <td></td>
-  <td class="diablos3">Diablos 3</td>
+  <td>Gouverneurs 1</td>
+  <td>8</td>
+  <td>4</td>
   <td>2</td>
+  <td>1</td>
+  <td>1</td>
+  <td>15</td>
+  <td>8</td>
+  <td>3</td>
+  <td>66.67</td>
+</tr>
+<tr class="gouverneurs2">
+  <td></td>
+  <td>Gouverneurs 2</td>
   <td>7</td>
+  <td>4</td>
+  <td>1</td>
+  <td>2</td>
+  <td>1</td>
+  <td>9</td>
+  <td>20</td>
+  <td>4</td>
+  <td>58.33</td>
+</tr>
+<tr class="diablos3">
+  <td></td>
+  <td>Diablos 3</td>
   <td>6</td>
+  <td>3</td>
+  <td>1</td>
+  <td>1</td>
+  <td>1</td>
+  <td>7</td>
+  <td>12</td>
+  <td>3</td>
+  <td>66.67</td>
 </tr>
       </tbody>
     </table>
@@ -105,15 +185,23 @@
 $(document).ready(function() {
   $('#standings').DataTable({
     "pageLength": 200,
+    fixedHeader: true,
     lengthChange: false,
     paging: false,
     searching: false,
+    "order": [[ 2, "desc" ]],
     "rowCallback": function( row, data, displayNum, displayIndex, dataIndex  ) {
       $('td:first-child', row).html( displayIndex );
     },
     "columns": [
       null,
       { "orderSequence": [ "asc", "desc" ] },
+      { "orderSequence": [ "desc", "asc" ] },
+      { "orderSequence": [ "desc", "asc" ] },
+      { "orderSequence": [ "desc", "asc" ] },
+      { "orderSequence": [ "desc", "asc" ] },
+      { "orderSequence": [ "desc", "asc" ] },
+      { "orderSequence": [ "desc", "asc" ] },
       { "orderSequence": [ "desc", "asc" ] },
       { "orderSequence": [ "desc", "asc" ] },
       { "orderSequence": [ "desc", "asc" ] },
