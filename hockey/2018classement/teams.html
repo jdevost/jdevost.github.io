@@ -189,9 +189,9 @@ $(document).ready(function() {
     lengthChange: false,
     paging: false,
     searching: false,
-    "order": [[ 2, "desc" ]],
+    "order": [[ 2, "desc" ],[ 4, "desc" ],[ 6, "desc" ],[ 3, "asc" ]],
     "rowCallback": function( row, data, displayNum, displayIndex, dataIndex  ) {
-      $('td:first-child', row).html( displayIndex );
+      $('td:first-child', row).html( displayIndex +1);
     },
     "columns": [
       null,
